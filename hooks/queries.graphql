@@ -1,0 +1,31 @@
+query hello {
+    hello
+}
+
+query listLinks {
+    listLinks {
+        id
+        label
+        content
+        type
+        position
+    }
+}
+
+query findLinkById($id: Int!) {
+    findLinkById(id: $id) {
+        id
+        label
+        content
+        type
+        position
+    }
+}
+
+query fetchOverview {
+    fetchOverview {
+        views
+        clicks
+        date
+    }
+}
